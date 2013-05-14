@@ -37,7 +37,7 @@ Mormon Channel
 
 This is a simple workflow that allows you to stream the [Mormon Channel](http://www.mormonchannel.org) radio using iTunes.  I like listening to the music stream at work sometimes when I'm tired of Pandora and I find it a pain to switch over to the browser and navigate through your tabs just to play/pause the stream.  Because the workflow uses iTunes, the Play/Pause buttons on your keyboard work to play/pause the stream (can also use play/pause keywords in Alfred if you like).  The workflow allows you to choose between the normal Mormon Channel, the Music channel, and Canal Mormón.
 
-#### [[Download Mormon Channel Workflow](https://github.com/andrewning/alfred-workflows-lds/raw/master/lds-mormon-channel/Mormon%20Channel.alfredworkflow)]
+#### [[Download Mormon Channel Workflow](https://github.com/andrewning/alfred-workflows-lds/raw/master/mormon-channel/Mormon%20Channel.alfredworkflow)]
 
 
 Acknowledgments
