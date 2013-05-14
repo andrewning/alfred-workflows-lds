@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>aning.scripture.search</string>
+	<key>connections</key>
+	<dict>
+		<key>051ACF9D-88C9-4441-8178-CCB86390D10A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>11A6594D-0B05-44F7-9072-EBDA040A1D3E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E7694A4D-17B6-41F9-83BC-454CDB97C6AA</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>open in browser</string>
+			</dict>
+		</array>
+		<key>11A6594D-0B05-44F7-9072-EBDA040A1D3E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E718F601-1B47-4322-8260-D4E594D4D67E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andrew Ning</string>
+	<key>description</key>
+	<string>search by reference or keyword</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>LDS Scripture Search</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>verse</string>
+				<key>runningsubtext</key>
+				<string>searching ...</string>
+				<key>script</key>
+				<string>python verse.py "{query}"</string>
+				<key>subtext</key>
+				<string>lds.org/scriptures</string>
+				<key>title</key>
+				<string>Find a Scripture Verse</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>051ACF9D-88C9-4441-8178-CCB86390D10A</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>python split.py "{query}" copy</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>11A6594D-0B05-44F7-9072-EBDA040A1D3E</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E718F601-1B47-4322-8260-D4E594D4D67E</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>python split.py "{query}" url</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E7694A4D-17B6-41F9-83BC-454CDB97C6AA</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>051ACF9D-88C9-4441-8178-CCB86390D10A</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>11A6594D-0B05-44F7-9072-EBDA040A1D3E</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>E718F601-1B47-4322-8260-D4E594D4D67E</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>E7694A4D-17B6-41F9-83BC-454CDB97C6AA</key>
+		<dict>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
